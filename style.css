@@ -1,69 +1,131 @@
-/* Set background color and font family for the entire website */
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
 body {
-    background-color: #F2F2F2;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  /* Style the header and navigation bar */
-  header {
-    background-color: #1E1E1E;
-    color: #FFFFFF;
-    padding: 20px;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-  }
-  
-  nav ul li {
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-    transition: all 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #FFC107;
-  }
-  
-  /* Style the content area */
-  .content {
-    margin: 40px;
-  }
-  
-  h1, h2, h3 {
-    color: #1E1E1E;
-    margin-bottom: 20px;
-  }
-  
-  p {
-    line-height: 1.5;
-  }
-  
-  /* Style the buttons */
-  .btn {
-    background-color: #FFC107;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #1E1E1E;
-    color: #FFFFFF;
-  }
-  
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+/* Main Content Styles */
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+main {
+  margin: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+  border: none;
+  border-radius: 3px;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #fff;
+}
+
+form button {
+  background-color: #333;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+form button:hover {
+  background-color: #444;
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
